@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="slide-container">
+               <div class="slider">
+                <img src="./loader.gif" alt="">
+               </div>
+               <div class="slide-btns">
+                  <button class="prev">&#10094;</button>
+                  <button class="next">&#10095;</button>
+               </div>
+            </div>
+            <div class="thumbnails">
+              
+            </div>
+        </div>
+
+
+        <!-- Product Information Section -->
+    <div class="product-details">
+        <h1 id="product-name">Laptop </h1>
+        <p id="product-price">$49.99</p>
+        <p id="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias similique tenetur officiis voluptate rerum, velit ad aperiam esse optio?</p>
+        
+        <!-- Variants -->
+        <label for="size">Size:</label>
+        <select id="size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+
+        <!-- Quantity Selector -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1">
+
+        <!-- Add to Cart Button -->
+        <button id="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <p id="confirmation-message" class="hidden">Added to Cart!</p>
+    </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
